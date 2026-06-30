@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: 코드 가져오기
-        uses: actions/chechout@v4
+        uses: actions/checkout@v4
 
       - name: Python설치
         uses: actions/setup-python@v5
@@ -25,4 +25,4 @@ jobs:
 
       - name: 테스트 실행
         run: pip tests/ -v
-        
+
